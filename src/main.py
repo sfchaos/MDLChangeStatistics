@@ -8,7 +8,7 @@ from data_generator import SingleJumpingMeanGenerator, SingleJumpingVarianceGene
                            MultipleJumpingMeanGenerator, MultipleJumpingVarianceGenerator, \
                            MultipleGradualMeanGenerator, MultipleGradualVarianceGenerator
 from evaluator import BenefitFalseAlarmEvaluator
-#import changefinder
+import mychangefinder
 
 from sklearn.metrics import auc
 import matplotlib.pyplot as plt
@@ -127,5 +127,9 @@ def test_multiple(h=100, T=10000, beta=0.5):
 
 
 if __name__ == '__main__':
-    test_single(h=200)
+    # SMDL
+    #test_single(h=200)
     #test_multiple()
+
+    # ChangeFinder
+
